@@ -1,0 +1,20 @@
+{
+  "source": "core",
+  "sidebars": [
+    {
+      "id": "widgeted-area-default",
+      "name": "Default",
+      "description": "Widgeted Area [Default]"
+    },
+    {
+      "id": "widgeted-area-posts",
+      "name": "Posts",
+      "description": "Widgeted Area [Posts]"
+    },
+    {
+      "id": "widgeted-area-pages",
+      "name": "Pages",
+      "description": "Widgeted Area [Pages]"
+    }
+  ]
+}

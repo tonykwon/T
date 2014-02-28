@@ -1,0 +1,63 @@
+{
+  "source": "core",
+  "version": "5.1.1",
+  "css": {
+    "5.1.1": {
+      "foundation-normalize": {
+        "sub": null,
+        "name": "normalize.css",
+        "path": null,
+        "deps": [],
+        "media": ""
+      },
+      "foundation-min": {
+        "sub": null,
+        "name": "foundation.min.css",
+        "path": null,
+        "deps": [],
+        "media": ""
+      }
+    }
+  },
+  "js": {
+    "5.1.1": {
+      "vendor-modernizr": {
+        "sub": "vendor",
+        "name": "modernizr.js",
+        "path": null,
+        "deps": [],
+        "in_footer": true
+      },
+      "vendor-fastclick": {
+        "sub": "vendor",
+        "name": "fastclick.js",
+        "path": null,
+        "deps": [],
+        "in_footer": true
+      },
+      "vendor-jquery": {
+        "sub": "vendor",
+        "name": "jquery.js",
+        "path": null,
+        "deps": [],
+        "in_footer": true
+      },
+      "foundation-min": {
+        "sub": null,
+        "name": "foundation.min.js",
+        "path": null,
+        "deps": [
+          "jquery", "vendor-jquery"
+        ],
+        "in_footer": true
+      },
+      "site": {
+        "sub": null,
+        "name": "site.js",
+        "path": null,
+        "deps": [],
+        "in_footer": true
+      }
+    }
+  }
+}

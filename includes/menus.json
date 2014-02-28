@@ -1,0 +1,9 @@
+{
+  "source": "core",
+  "menus": {
+    "menu-primary": "Navigation [Primary]",
+    "menu-side": "Navigation [Side]",
+    "menu-footer": "Navigation [Footer]",
+    "menu-footer2": "Navigation [Footer 2]"
+  }
+}

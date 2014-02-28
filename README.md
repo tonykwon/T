@@ -1,4 +1,3 @@
-T
-=
+#### T
 
-This is not a WordPress Theme
+This is not a WordPress Theme nor a Theme Framework.
