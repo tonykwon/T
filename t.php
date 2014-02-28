@@ -5,7 +5,7 @@
  * A core class that does lots for you
  * 
  * @package WordPress
- * @subpackage T
+ * @subpackage T-core
  * @since T 0.1
  */
 
