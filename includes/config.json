@@ -2,7 +2,7 @@
     "source": "core",
     "copyright": {
         "year": 2013,
-        "author": "Top Draw Inc"
+        "author": "Tony Kwon"
     },
     "debug": true,
     "can_flush_early": false,
