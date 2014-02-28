@@ -1,56 +1,56 @@
 {
-    "source": "core",
-    "copyright": {
-        "year": 2013,
-        "author": "Tony Kwon"
+  "source": "core",
+  "copyright": {
+    "year": 2013,
+    "author": "Tony Kwon"
+  },
+  "debug": true,
+  "can_flush_early": false,
+  "template_name": "default",
+  "templates": [
+    "404_template",
+    "search_template",
+    "taxonomy_template",
+    "frontpage_template",
+    "home_template",
+    "attachment_template",
+    "image_template",
+    "single_template",
+    "page_template",
+    "category_template",
+    "tag_template",
+    "author_template",
+    "date_template",
+    "archive_template",
+    "commentspopup_template",
+    "paged_template"
+  ],
+  "assets": {
+    "foundation": "5.1.1",
+    "base": "assets",
+    "css": {
+      "config": {
+        "directory": "css",
+        "timestamp": true,
+        "do_relocate": false,
+        "relocate": "\n<!-- css assets to relocate -->\n",
+        "inline_styles": "\n<!-- inline styles -->\n"
+      },
+      "inlines": [],
+      "enqueue": []
     },
-    "debug": true,
-    "can_flush_early": false,
-    "template_name": "default",
-    "templates": [
-        "404_template",
-        "search_template",
-        "taxonomy_template",
-        "frontpage_template",
-        "home_template",
-        "attachment_template",
-        "image_template",
-        "single_template",
-        "page_template",
-        "category_template",
-        "tag_template",
-        "author_template",
-        "date_template",
-        "archive_template",
-        "commentspopup_template",
-        "paged_template"
-    ],
-    "assets": {
-        "foundation": "5.1.1",
-        "base": "assets",
-        "css": {
-            "config": {
-                "directory": "css",
-                "timestamp": true,
-                "do_relocate": false,
-                "relocate": "\n<!-- css assets to relocate -->\n",
-                "inline_styles": "\n<!-- inline styles -->\n"
-            },
-            "inlines": [],
-            "enqueue": []
-        },
-        "js": {
-            "config": {
-                "directory": "js",
-                "timestamp": true,
-                "do_relocate": false,
-                "relocate": "\n<!-- js assets to relocate -->\n",
-                "inline_scripts": "\n<!-- inline scripts -->\n"
-            },
-            "inlines": [],
-            "enqueue": []
-        }
-    },
-    "menus": null,
-    "sidebars": null
+    "js": {
+      "config": {
+        "directory": "js",
+        "timestamp": true,
+        "do_relocate": false,
+        "relocate": "\n<!-- js assets to relocate -->\n",
+        "inline_scripts": "\n<!-- inline scripts -->\n"
+      },
+      "inlines": [],
+      "enqueue": []
+    }
+  },
+  "menus": null,
+  "sidebars": null
 }

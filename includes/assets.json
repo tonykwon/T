@@ -47,7 +47,8 @@
         "name": "foundation.min.js",
         "path": null,
         "deps": [
-          "jquery", "vendor-jquery"
+          "jquery",
+          "vendor-jquery"
         ],
         "in_footer": true
       },
