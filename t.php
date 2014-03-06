@@ -263,6 +263,9 @@ class T {
 		/* let's fix up the author archives permalink for our built in post type `post` */
 		add_filter( 'author_link', array( __CLASS__, 'author_link' ), 10, 3 );
 
+		/* ua compatible header */
+		add_action( 'send_headers', array( __CLASS__, 'send_headers') );
+
 	}
 
 	/**
@@ -1212,6 +1215,18 @@ class T {
 		/* WordPress version */
 		remove_action( 'wp_head', 'wp_generator' );
 
+	}
+
+	/**
+	 * send ua compatible header
+	 * 
+	 * @internal add_action( 'send_headers', array( __CLASS__, 'send_headers') );
+	 * @return void
+	 */
+	public static function send_headers() {
+
+		header( 'X-UA-Compatible: IE=edge,chrome=1' );
+		
 	}
 
 }
