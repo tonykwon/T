@@ -266,6 +266,9 @@ class T {
 		/* ua compatible header */
 		add_action( 'send_headers', array( __CLASS__, 'send_headers') );
 
+		/* add slug components into the body class */
+		add_filter( 'body_class', array( __CLASS__, 'body_class' ) );
+
 	}
 
 	/**
@@ -1229,6 +1232,35 @@ class T {
 		
 	}
 
+	/**
+	 * get the path component of the parse_url result then merge them to the pre-determined body classes array
+	 * 
+	 * @param  array  $classes pre-determined body classes
+	 * @return array $classes 
+	 */
+	public static function body_class( $classes = array() ) {
+
+		global $wp;
+
+		if ( is_feed() OR is_404() ) {
+			return $classes;
+		}
+
+        $parsed = parse_url($wp->request);
+        $_uris  = explode('/', untrailingslashit(utf8_decode(urldecode($parsed['path']))));
+        if ( $_uris ) {
+        	foreach($_uris as $k => $_uri) {
+        		if ( $_uri == '' ) {
+        			unset($_uris[$k]);
+        		}
+        		$_uris[$k] = strtr($_uri, array('_' => '-'));
+        	}
+            $classes = array_merge($classes, $_uris);
+        }
+
+    	return array_unique($classes);
+
+	}
 }
 
 T::get_instance();
